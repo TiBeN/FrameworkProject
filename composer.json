@@ -1,6 +1,6 @@
 {
     "name": "tiben/framework-project",
-    "description": "A Skeleton to create a new project using the Framework",
+    "description": "A Skeleton to create a new project using TiBeN/Framework",
     "type": "project",
     "license": "Apache-2.0",
     "authors": [
@@ -24,10 +24,4 @@
             "" : "src/"   
         }
     },
-    "minimum-stability": "dev",
-    "extra": {
-       "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
-    }
 }
