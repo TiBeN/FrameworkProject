@@ -1,0 +1,27 @@
+{
+    "name": "tiben:framework-project",
+    "description": "A Skeleton to create a new project using the Framework",
+    "type": "project",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Benjamin Legendre",
+            "email": "legendre.benjamin@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/TiBeN/Framework"
+        }        
+    ],
+    "require": {
+        "php": ">= 5.3",
+        "tiben/framework": "dev-master"
+    }
+    "autoload" : {
+        "psr-4": {
+            "" : "src/"   
+        }
+    }
+}
