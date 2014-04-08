@@ -3,6 +3,7 @@
 namespace MyProject\Controller;
 
 use TiBeN\Framework\Router\HttpResponse;
+use TiBeN\Framework\Datatype\AssociativeArray;
 
 /**
  * This is the default demo controller bundled
@@ -16,10 +17,10 @@ class WelcomePageController
     /**
      * Display the welcome page
      */
-    public function displayWelcomePage(ArrayCollection $variables)
+    public function displayWelcomePage(AssociativeArray $variables)
     {
         $httpResponse = new HttpResponse();
-        $httpResponse->setContent("<html>Welcome to your new project!</html>");
+        $httpResponse->setMessage("<html><h1>Welcome to your new project!</h1><p>TiBeN Framework</p></html>");
         return $httpResponse;
     }
 }

@@ -5,7 +5,8 @@
  * Declare your routing rules here
  */
 
-use Framework\Router\RouteRule;
+use TiBeN\Framework\Router\RouteRule;
+use TiBeN\Framework\Router\Router;
 
 // Route rule for the default "welcome page"
 $indexRouteRule = new RouteRule();

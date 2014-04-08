@@ -7,7 +7,7 @@
  * @author TiBeN 
  */
 
-require(dirname(__FILE__) . '/../vendor/autoload.php';
+require(dirname(__FILE__) . '/../vendor/autoload.php');
 
 use TiBeN\Framework\Bootstrap\Bootstrap;
 use TiBeN\Framework\Router\Router;
