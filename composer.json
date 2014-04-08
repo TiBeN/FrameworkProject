@@ -1,5 +1,5 @@
 {
-    "name": "tiben:framework-project",
+    "name": "tiben/framework-project",
     "description": "A Skeleton to create a new project using the Framework",
     "type": "project",
     "license": "Apache-2.0",
