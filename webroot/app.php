@@ -12,5 +12,8 @@ require(dirname(__FILE__) . '/../vendor/autoload.php');
 use TiBeN\Framework\Bootstrap\Bootstrap;
 use TiBeN\Framework\Router\Router;
 
-Bootstrap::init(dirname(__FILE__) . '/../config');
+Bootstrap::init(
+    dirname(__FILE__) . '/../config',
+    sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'tiben_framework'
+);
 Router::handleCurrentHttpRequest();
