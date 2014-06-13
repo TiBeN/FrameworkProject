@@ -10,10 +10,17 @@
 require(dirname(__FILE__) . '/../vendor/autoload.php');
 
 use TiBeN\Framework\Bootstrap\Bootstrap;
-use TiBeN\Framework\Router\Router;
+use TiBeN\Framework\ServiceContainer\ServiceContainer;
 
-Bootstrap::init(
-    dirname(__FILE__) . '/../config',
-    sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'tiben_framework'
-);
-Router::handleCurrentHttpRequest();
+$boot = new Bootstrap();
+
+// Declare your packages here
+$boot->init(array(
+    new TiBeN\Framework\ServiceContainer\ServiceContainerPackageInitializer(
+        dirname(__FILE__) . '/../config/config.php'
+    ),
+    new TiBeN\Framework\Router\RouterPackageInitializer(
+        dirname(__FILE__) . '/../config/routeRules.php'
+    )
+));
+ServiceContainer::get('router')->handleCurrentHttpRequest();
